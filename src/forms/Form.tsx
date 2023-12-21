@@ -1,11 +1,11 @@
-import { ReactNode } from "react";
+import React from "react";
 import { useUniqueID } from "../utils/useUniqueID";
 import { FormContext } from "./FormContext";
 import { Group } from "./Group";
 import { Control } from "./Control";
 import { Label } from "./Label";
 
-interface FormComposition {
+export interface FormComposition {
   Group: typeof Group;
   Control: typeof Control;
   Label: typeof Label;

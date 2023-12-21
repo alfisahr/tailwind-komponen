@@ -1,3 +1,3 @@
 import { createContext } from "react";
 
-export const FormGroupContext = createContext<any>(undefined);
+export const FormGroupContext = createContext<string | undefined>(undefined);

@@ -36,7 +36,7 @@ const colorStyles = (p: ButtonProps) => {
 };
 
 export const StyledButton = styled("button").withConfig({
-  shouldForwardProp: (p) => p !== "isFullWidth",
+  shouldForwardProp: (p) => !["isFullWidth"].includes(p),
 })<ButtonProps>`
   cursor: pointer;
   display: ${(p) => (p.isFullWidth ? "block" : "inline-block")};

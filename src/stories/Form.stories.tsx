@@ -1,7 +1,6 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 import Form from "../forms/Form";
-import { Control } from "../forms/Control";
 
 const meta = {
   title: "Example/Form",

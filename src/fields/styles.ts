@@ -38,9 +38,9 @@ export const StyledInput = styled.input`
   }
 `;
 
-export const StyledTextarea = styled(StyledInput)
+export const StyledTextarea = styled("textarea")
   .withConfig({
-    shouldForwardProp: (p) => p !== "isResizable",
+    shouldForwardProp: (p) => !["isResizable"].includes(p),
   })
   .attrs({
     as: "textarea",
